@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(64, 68, 201);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.navbar h1 {
+  color: white;
+  margin-left: 5%;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: end;
+  margin-right: 5%;
+  color: white;
+  font-family: "Lato", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.profile img {
+  width: 45px;
+  margin-left: 15px;
+}
+
+/* ========== Form Input Data ==========*/
+
+.container-form {
+  /* background-color: red; */
+  width: 95vw;
+  margin-top: 1%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.form-add-data {
+  /* background-color: rgba(64, 68, 201, 0.151); */
+  background-color: rgba(0, 67, 225, 0.205);
+
+  width: 100%;
+  /* border: 1px solid rgb(64, 68, 201); */
+  /* border: 1px solid rgb(0,68,225); */
+
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 5px;
+}
+.container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.container-input label {
+  margin-top: 6px;
+}
+.container-input input,
+.container-input select {
+  width: 95%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid rgba(124, 124, 124, 0.486);
+}
+.container-button {
+  /* background-color: red; */
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+.container-button button {
+  width: 22%;
+  height: 40px;
+  background-color: rgb(69, 42, 223);
+  border: none;
+  border-radius: 7.5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+/* ========== List Data ==========*/
+
+.list-container {
+  /* background-color: red; */
+  margin-top: 1%;
+  width: 95%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.list-task-container {
+  /* background-color: rgb(0, 0, 255); */
+  min-height: 100%;
+  width: 65%;
+}
+
+.list-task {
+  background-color: rgba(0, 67, 225, 0.205);
+  width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 5px;
+}
+.list-task ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.li-list {
+  /* background-color: red; */
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1%;
+}
+.done{
+  /* background-color: red; */
+  .title-date h2{
+    text-decoration: line-through;
+    color: #aaa;
+  }
+}
+
+.list {
+  background-color: rgba(255, 255, 255, 0.76);
+  border-radius: 6px;
+  height: 130px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.list-selesai{
+  width: 100%;
+}
+
+.list:hover{
+  background-color: rgba(67, 50, 219, 0.678);
+  color: white;
+  .title-date img{
+    filter: brightness(0) invert(1);
+  }
+}
+
+.list-delete {
+  background-color: rgb(202, 63, 63);
+  width: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: none;
+  font-size: 100%;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+
+}
+.list-delete:hover{
+  background-color: rgb(187, 48, 48);
+}
+.list-delete:active{
+  background-color: rgb(231, 58, 58);
+}
+
+.level {
+  /* background-color: blue; */
+  position: absolute;
+  top: 20px;
+}
+.level span {
+  width: 100px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  color: white;
+}
+.level-low{
+  background-color: rgb(64, 68, 201);
+;
+}
+.level-medium{
+  background-color: rgb(130, 64, 201);
+}
+.level-high{
+  background-color:   rgb(206, 60, 60);
+}
+
+.title-date {
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-date div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.title-date div img {
+  width: 35px;
+}
+
+/* list done */
+.list-done-container {
+  /* background-color: rgb(0, 128, 0); */
+  max-height: 100%;
+  width: 35%;
+}
+
+.list-done {
+  background-color: rgba(0, 67, 225, 0.205);
+  width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.list-done ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 720px) {
+  .list-container {
+    flex-direction: column;
+  }
+  .list-task-container {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .list-done-container {
+    width: 100%;
+  }
+}
+@media (max-width: 630px){
+  .li-list {
+    /* background-color: red; */
+    width: 100%;
+  }
+  
+  .list {
+    height: 100px;
+    width: 90%;
+  }
+  .level{
+    top: 10px;
+  }
+  .title-date{
+    font-size: 12px;
+  }
+  .title-date div img {
+    width: 25px;
+  }
+  .list-delete {
+    font-size: 12px;
+}
+}
+@media (max-width: 480px){
+  .list {
+    height: 80px;
+    width: 85%;
+    padding: 10px;
+  }
+  .list-selesai {
+    width:100%
+  }
+  .list-delete{
+    width: 15%;
+  }
+  .title-date{
+    font-size: 10px;
+  }
+  .title-date h2{
+    font-size: 13px;
+  }
+  .level{
+    padding-left:30px;
+  } 
+  .level span{
+    font-size: 12px;
+    width: 75px;
+  }
+}

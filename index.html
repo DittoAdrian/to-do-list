@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>To-Do List</h1>
+        <div class="profile">
+            <div>
+                <p>Putra Ahmad</p>
+                <p>Software Enginer</p>
+            </div>
+            <img src="images/profile.png" alt="">
+        </div>
+        <!-- <input type="color"> -->
+    </nav>
+
+    <!-- Formu Input Data -->
+     <section class="container-form">
+        <h2>Add List</h2>
+        <form id="formTambahTugas" class="form-add-data">
+            <div class="container-input">
+                <label for="">Kegiatan</label>
+                <input id="titleTugas" type="text" placeholder="Masukan kegiatan!" required >
+                
+                <label for="">Deadline</label>
+                <input id="dateTugas" type="date" required>
+
+                <label for="">Level</label>
+                <select name="" id="selectTugas">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+            <div class="container-button">
+                <button type="submit">Tambah</button>
+            </div>
+        </form>
+     </section>
+
+     <!-- List Data -->
+     <section class="list-container">
+        <div class="list-task-container">
+            <h2>List Task</h2>
+
+            <div class="list-task">
+                <ul id="ul-list-task">
+
+                    <li class="li-list">
+
+                        <div class="list">
+
+                            <div class="level">
+                                <span>Medium</span>
+                            </div>
+                            <div class="title-date">
+                                <div>
+                                    <img src="images/uncheck.svg" alt="">
+                                    <h2>mengerjakan tugas</h2>
+                                </div>
+                                <h3>23/08/2024</h3>
+                            </div>
+                              
+                        </div>
+
+                        <button class="list-delete"> Delete</button>
+                    </li>
+
+                    <li class="li-list">
+
+                        <div class="list">
+
+                            <div class="level">
+                                <span>Medium</span>
+                            </div>
+                            <div class="title-date">
+                                <div>
+                                    <img src="images/checked.svg" alt="">
+                                    <h2>mengerjakan tugas</h2>
+                                </div>
+                                <h3>23/08/2024</h3>
+                            </div>
+                              
+                        </div>
+
+                        <button class="list-delete"> Delete</button>
+                    </li>
+                    <li class="li-list">
+
+                        <div class="list">
+
+                            <div class="level">
+                                <span>Medium</span>
+                            </div>
+                            <div class="title-date">
+                                <div>
+                                    <img src="images/checked.svg" alt="">
+                                    <h2>mengerjakan tugas</h2>
+                                </div>
+                                <h3>23/08/2024</h3>
+                            </div>
+                              
+                        </div>
+
+                        <button class="list-delete"> Delete</button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="list-done-container">
+            <h2>Task Done</h2>
+            <div class="list-done">
+                <ul id="ul-list-done">
+
+                    <li class="li-list"></li>
+                        <div class="list">
+                            <div class="level">
+                                <span>Medium</span>
+                            </div>
+                            <div class="title-date">
+                                <div>
+                                    <img src="images/uncheck.svg" alt="">
+                                    <h2>mengerjakan tugas</h2>
+                                </div>
+                                <h3>23/08/2024</h3>
+                            </div>                      
+                        </div>
+                    </li>
+
+                    <li class="li-list"></li>
+                        <div class="list">
+
+                            <div class="level">
+                                <span>Medium</span>
+                            </div>
+                            <div class="title-date">
+                                <div>
+                                    <img src="images/uncheck.svg" alt="">
+                                    <h2>mengerjakan tugas</h2>
+                                </div>
+                                <h3>23/08/2024</h3>
+                            </div>
+                              
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+     </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
