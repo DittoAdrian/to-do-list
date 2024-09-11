@@ -1,26 +1,4 @@
-let tugas = [
-  {
-    titleValue : 'asdsdfa',
-    dateValue : 123123123,
-    selectValue : 'Low',
-    done: false,
-  },
-  
-  {
-    titleValue : 'asdsdfa',
-    dateValue : 123123123,
-    selectValue : 'Medium',
-    done: false,
-  },
-  {
-    titleValue : 'asdsdfa',
-    dateValue : 123123123,
-    selectValue : 'High',
-    done: false,
-  }
-
-
-];
+let tugas = [];
 
 const formTambahTugas = document.getElementById("formTambahTugas");
 formTambahTugas.addEventListener("submit", (e) => {
