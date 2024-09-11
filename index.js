@@ -1,6 +1,7 @@
 let tugas = [];
 
 const buttonClear = document.getElementById('clear-task')
+
 const formTambahTugas = document.getElementById("formTambahTugas");
 formTambahTugas.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -56,19 +57,21 @@ function renderTugas() {
   if (tugas.length == 0 ){
     buttonClear.classList.remove('hidden')
   }
+
+  let alldone = tugas.filter(item=>item.done)
+  if(alldone.length === 0){
+    buttonClear.classList.remove('hidden')
+  }
+  else{
+    buttonClear.classList.add('hidden')
+    }
+
   tugas.forEach((task, index) => {
     const list = document.createElement("li");
     list.className = "li-list";
 
     if (task.done) {
       list.classList.add("done");
-    }
-
-    if(task.done){
-      buttonClear.classList.add('hidden')
-    }
-    else{
-    buttonClear.classList.remove('hidden')
     }
 
     list.innerHTML = `

@@ -271,6 +271,7 @@ body {
   flex-direction: column;
   padding: 20px;
   margin-top: 5px;
+  justify-content: space-between;
 }
 
 .list-done ul {
